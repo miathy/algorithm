@@ -8,6 +8,7 @@ public class OddTimeAppearance {
 	
 	public static void main(String[] args) {
 		int [] arr = {1,2,3,4,5,6,1,2,3,4,5,15,15,15};
+		
 		System.out.println(findOddTime(arr));
 	}
 	public static int findOddTime(int[] input) {
@@ -23,6 +24,7 @@ public class OddTimeAppearance {
 				countMap.put(key, 1);
 			}
 		}
+		
 		for (Entry<Integer, Integer> val : countMap.entrySet()) {
 
 			if (val.getValue()% 2 != 0) {
